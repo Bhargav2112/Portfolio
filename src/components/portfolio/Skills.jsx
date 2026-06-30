@@ -76,7 +76,7 @@ export default function Skills() {
   const [sectionRef, visible] = useReveal();
 
   return (
-    <section id="skills" ref={sectionRef} className="relative py-40 overflow-hidden" style={{ background: '#000000' }}>
+    <section id="skills" ref={sectionRef} className="relative py-24 overflow-hidden" style={{ background: '#000000' }}>
       {/* Decorative emerald block */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#0B6B4B] pointer-events-none" style={{ opacity: 0.025 }} />
 

@@ -19,7 +19,7 @@ export default function About() {
   const [sectionRef, visible] = useReveal();
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-40 overflow-hidden" style={{ background: '#050505' }}>
+    <section id="about" ref={sectionRef} className="relative py-24 overflow-hidden" style={{ background: '#050505' }}>
       {/* Gold vertical hairlines */}
       <div className="absolute left-[8%] top-0 bottom-0 w-px bg-[#C8A24D] opacity-8 z-0" style={{ opacity: 0.08 }} />
 

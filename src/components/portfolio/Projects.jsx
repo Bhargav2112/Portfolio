@@ -5,6 +5,8 @@ import hospitalImg from '@/assets/hospital.png';
 import jyotsetuImg from '@/assets/jyotsetu.png';
 import royalheavenImg from '@/assets/royalheaven.png';
 import flipcartImg from '@/assets/flipcart.png';
+import bizsoleImg from '@/assets/bizsole.png';
+import luxeblogImg from '@/assets/luxeblog.png';
 
 function useReveal(threshold = 0.1) {
   const ref = useRef(null);
@@ -73,7 +75,8 @@ const projects = [
     tags: ['React.js', 'Node.js', 'MongoDB'],
     category: 'Corporate',
     ctaText: 'Explore Business Site',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80&fit=crop',
+    image: bizsoleImg,
+    link: 'https://bi-zsole-2pz7.vercel.app/',
   },
   {
     id: '06',
@@ -83,7 +86,8 @@ const projects = [
     tags: ['React.js', 'Node.js', 'MongoDB'],
     category: 'Content',
     ctaText: 'Read Platform',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80&fit=crop',
+    image: luxeblogImg,
+    link: 'https://luxeblog-six.vercel.app/',
   },
   {
     id: '07',
@@ -234,7 +238,7 @@ export default function Projects() {
   const [sectionRef, visible] = useReveal();
 
   return (
-    <section id="projects" ref={sectionRef} className="relative pt-40 pb-0" style={{ background: '#000000' }}>
+    <section id="projects" ref={sectionRef} className="relative pt-24 pb-0" style={{ background: '#000000' }}>
       <div className="max-w-screen-2xl mx-auto px-8 md:px-16 pb-24">
         {/* Header */}
         <div className={`flex items-center gap-6 mb-6 transition-all duration-900 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

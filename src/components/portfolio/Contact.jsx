@@ -90,7 +90,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-40 overflow-hidden" style={{ background: '#000000' }}>
+    <section id="contact" ref={sectionRef} className="relative py-24 overflow-hidden" style={{ background: '#000000' }}>
       {/* Gold vertical hairline */}
       <div className="absolute right-[8%] top-0 bottom-0 w-px bg-[#C8A24D] opacity-5 z-0" />
 

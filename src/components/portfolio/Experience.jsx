@@ -119,7 +119,7 @@ export default function Experience() {
   const [sectionRef, visible] = useReveal();
 
   return (
-    <section id="experience" ref={sectionRef} className="relative py-40" style={{ background: '#050505' }}>
+    <section id="experience" ref={sectionRef} className="relative py-24" style={{ background: '#050505' }}>
       <div className="max-w-screen-2xl mx-auto px-8 md:px-16">
         {/* Header */}
         <div className={`flex items-center gap-6 mb-6 transition-all duration-900 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
