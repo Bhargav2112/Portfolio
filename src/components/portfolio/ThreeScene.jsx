@@ -94,10 +94,10 @@ export default function ThreeScene() {
         particles.rotation.y -= 0.00025;
         knot.rotation.z += 0.0008;
       }
-      renderer.render(scene, camera);
       frame += 1;
-      // Low-power render cadence on small devices.
+      // Low-power render cadence on small devices: skip alternate frames.
       if (isCoarsePointer && frame % 2 === 0) return;
+      renderer.render(scene, camera);
     };
     animate();
 
